@@ -12,12 +12,12 @@ body {
 #wrap {
   position: relative;
   height: 100%;
+  min-width: 1200px;
 }
 
 
 /* header */
 #wrap header {
-  /* width: 1640px; */
   height: 100px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -52,9 +52,13 @@ header .list .list_btn {
   text-align: center;
 }
 
+
 /* contents */
 .contents {
-  padding: 0 50px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 1640px;
   margin: 0 auto;
   box-sizing: border-box;
   padding: 0 50px;
@@ -90,7 +94,6 @@ header .list .list_btn {
 
 /* main contents */
 .main {
-  /* width: 1070px; */
   height: 600px;
   margin-left: 375px;
   background: #138ade;
@@ -110,6 +113,7 @@ header .list .list_btn {
 .btn_menu {
   width: 100%;
   padding: 60px 0 30px;
+  box-sizing: border-box;
 }
 
 .contents .btn_menu ul {
@@ -167,6 +171,7 @@ header .list .list_btn {
 .main_list {
   display: block;
   margin: 20px 0 0;
+  width: 100%;
 }
  
 .main_list .list_img {
@@ -175,15 +180,17 @@ header .list .list_btn {
 }
 
 .main_list .img_list .slide {
+  display: inline-block;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 .main_list .img_list .slide img {
   width: 180px;
   height: 101px;
   margin: 0 20px 0 0;
+  overflow: hidden;
 }
+
 
 /* footer */
 footer {
@@ -207,7 +214,13 @@ footer p {
 
 
 /* media query */
-/* @media (max-width: 1500px) {
+@media (max-width: 1299px){
+  #wrap header {
+    max-width: 970px;
+  } 
+}
+
+@media (max-width: 1500px) {
   #wrap header, #wrap .contents {
     max-width: 1230px;
   }
@@ -218,17 +231,3 @@ footer p {
     max-width: 1445px;
   }
 }
-
-@media (max-width: 1500px) {
-  #wrap .contents .main>img {
-    width: 854px;
-    height: 479px;
-  }  
-}
-
-@media (max-width: 1500px) {
-  #wrap .contents .main_list {
-    width: 854px;
-    margin-left: 375px;
-  }  
-} */
