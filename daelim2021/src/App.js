@@ -1,8 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg'
+import './App.css'
 import Header from './components/header'
 import Contents from './components/contents'
-import Footer from './components/footer';
+import Footer from './components/footer'
 
 function App() {
   const content_data = [{
@@ -18,28 +18,28 @@ function App() {
   },{
     img: "../images/main04.jpeg",
     isNow: false,
-    title: "[대림대학교 ㅣ 대...",
-    title_on: "대림대학교 ㅣ 대림대 공식 홍보영상(..."
+    title: "[[2020 대림 Cyber Tech-F...",
+    title_on: "2020 대림 Cyber Tech-Fair] Space deffense"
   },{
     img: "../images/main05.jpeg",
     isNow: false,
-    title: "[대림대학교 ㅣ 대...",
-    title_on: "대림대학교 ㅣ 대림대 공식 홍보영상(..."
+    title: "[2020 대림 Cyber Tech-F...",
+    title_on: "2020 대림 Cyber Tech-Fair] BlockBlock"
   },{
     img: "../images/main06.jpeg",
     isNow: false,
-    title: "[대림대학교 ㅣ 대...",
-    title_on: "대림대학교 ㅣ 대림대 공식 홍보영상(..."
+    title: "[[2020 대림 Cyber Tech-F...",
+    title_on: "[2020 대림 Cyber Tech-Fair] 루시드드림"
   },{
     img: "../images/main07.jpeg",
     isNow: false,
-    title: "[대림대학교 ㅣ 대...",
-    title_on: "대림대학교 ㅣ 대림대 공식 홍보영상(..."
+    title: "[[2020 대림 Cyber Tech-F...",
+    title_on: "[2020 대림 Cyber Tech-Fair] shooting shot"
   },{
     img: "../images/main08.jpeg",
     isNow: false,
-    title: "[대림대학교 ㅣ 대...",
-    title_on: "대림대학교 ㅣ 대림대 공식 홍보영상(..."
+    title: "[2020 대림 Cyber Tech-F...",
+    title_on: "[2020 대림 Cyber Tech-Fair] 주차 관리 프로..."
   }]
 
   const menu_data = [{
@@ -61,4 +61,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
