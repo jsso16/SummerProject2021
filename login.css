@@ -210,13 +210,13 @@ legend {
   padding-left: 5px;
 }
 
-.login_bu_area {
+.login_btn_area {
   float: left;
   margin-top: 10px;
   margin-left: -20px;
 }
 
-.login_bu_area li {
+.login_btn_area li {
   float: left;
   margin-right: 10px;
 }
