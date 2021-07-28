@@ -15,6 +15,7 @@ body {
   margin-top: -17px;
 }
 
+
 /* top */
 #logo_wrap {
   width: 1139px;
@@ -264,6 +265,8 @@ legend {
   color: #e32727;
 }
 
+
+/* notice area */
 .board_area {
   position: relative;
   top: 0px;
@@ -305,7 +308,8 @@ legend {
   padding-top: 6px;
 }
 
-/**/
+
+/* copyright */
 .copyright {
   position: relative;
   width: 1140px;
