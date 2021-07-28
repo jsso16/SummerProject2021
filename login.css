@@ -1,15 +1,10 @@
 /* wrap */
-html {
-margin: 0;
-}
-
 body {
   color: #37383C;
   font-size: 0.8em;
   font-family: "맑은 고딕", "돋움", Dotum, AppleGothic, Sans-serif;
   margin: 0px;
   padding: 0px;
-  overflow-x:hidden;
 }
 
 #wrap {
