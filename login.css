@@ -1,10 +1,15 @@
 /* wrap */
+html {
+margin: 0;
+}
+
 body {
   color: #37383C;
   font-size: 0.8em;
   font-family: "맑은 고딕", "돋움", Dotum, AppleGothic, Sans-serif;
   margin: 0px;
   padding: 0px;
+  overflow-x:hidden;
 }
 
 #wrap {
@@ -12,6 +17,7 @@ body {
   background: #fff;
   height: 80px;
   background-color: #454e5d;
+  margin-top: -17px;
 }
 
 /* top */
@@ -73,13 +79,14 @@ ul, ol, li {
   width: 511px;
   height: 706px;
   float: right;
+  margin-top: 25px;
   background: rgba(255,255,255, 0.8);
 }
 
 .browser_notice {
   position: absolute;
-  width: 900px;
-  left: 64%;
+  width: 260px;
+  left: 62%;
   margin-left: -95px;
   top: 20px;
 }
@@ -93,4 +100,234 @@ ul, ol, li {
   position:relative;
   top:20px;
   left:317px;
+}
+
+
+/* login section */
+.login_box {
+  position: relative;
+  top: 40px;
+  left: 20px;
+}
+
+.login_tabarea {
+  width: 322px;
+  height: 48px;
+  vertical-align: middle;
+  color: #515151;
+}
+
+.login_tabarea li {
+  width:160px;
+  height: 48px;
+  float: left;
+  text-align: center;
+  padding-top: 16px;
+  display: block;
+}
+
+.login_on {
+  background: url(../images/login/login_tab_on.png);
+  background-size: 160px 48px;
+  background-repeat: no-repeat;
+  margin-top: 22px;
+  margin-left: -18px;
+  font-weight: bold;
+  color: #1a4f9f;
+  font-size: 1.2em;
+}
+
+.blind {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+
+
+/* login content */
+.login_content_area {
+  width: 470px;
+  height: 270px;
+  background: url(../images/login/login_box.png) no-repeat;
+  margin-top: 0px;
+  margin-left: 22px;
+}
+
+.login_field {
+  width:500px; 
+  clear:both;
+  margin-left: -60px;
+}
+
+fieldset, form, button {
+  border: 0;
+}
+
+legend {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+
+
+/* login box */
+.login_input_area {
+  padding-top: 10px;
+  clear: both;
+  float: left;
+  padding-left: 40px;
+}
+
+.input_row {
+  position: relative;
+  border: solid 1px #CECECE;
+  padding: 0px 0px 0px 0px;
+  margin: 0 0 10px;
+  height: 31px;
+  width: 243px;
+  border-radius: 2px;
+  background: #fff;
+}
+
+.int {
+  position: relative;
+  width: 97%;
+  padding: 7px 2px 6px;
+  height: 16px;
+  z-index: 9;
+  border: none;
+  font-size: 15px;
+  color: #000;
+  line-height: 16px;
+  padding-left: 5px;
+}
+
+.login_bu_area {
+  float: left;
+  margin-top: 10px;
+  margin-left: -20px;
+}
+
+.login_bu_area li {
+  float: left;
+  margin-right: 10px;
+}
+ 
+
+/* forget area */
+.forget_area {
+  background: url(./images/login/forget_area.png) no-repeat 40px 13px;
+  width: 430px;
+  height: 60px;
+  clear: both;
+}
+
+.forget_area .area1 {
+  position: relative; 
+  top: 15px; 
+  left: 2px;
+}
+
+.forget_area .area2 {
+  position: relative; 
+  top: -3px; 
+  left: 218px;
+}
+
+.forget_area .area3 {
+  position: relative; 
+  top: 0px; 
+  left: 17px;
+}
+
+.forget_area .area4 {
+  position: relative; 
+  top: -28px; 
+  left: 232px;
+}
+
+.first_pw {
+  padding-left:0px;
+}
+
+.change_pw {
+  padding-top: 3px; 
+  padding-left: 0px; 
+  font-weight: bold; 
+  color: #e32727;
+}
+
+.board_area {
+  position: relative;
+  top: 0px;
+  left: 25px;
+  margin-top: 30px;
+  background: url(../images/login/board_area.png) no-repeat;
+  width: 470px;
+  height: 250px;
+}
+
+.board_content_area {
+  width: 470px;
+  height: 175px;
+  margin-top: 30px;
+}
+
+.board_content_area li {
+  position: relative;
+  top: 55px;
+  left: -7px;
+}
+
+.board_content_area li dl {
+  width: 90%;
+  display: inline-block;
+  margin-top: -2px;
+}
+
+.board_content_area li dl dt {
+  float: left;
+  background: url(../images/login/login_dot.png) 0px 12px no-repeat;
+  padding-left: 12px;
+  padding-top: 8px;
+}
+
+.board_content_area li dl dd {
+  float: right;
+  width: 23%;
+  padding-top: 6px;
+}
+
+/**/
+.copyright {
+  position: relative;
+  width: 1140px;
+  left: 50%;
+  margin-left: -570px;
+  height: 80px;
+  background: url(../images/login/login_bottom_copyright.png) no-repeat 10px 14px;
+}
+
+.copyright a {
+  display: block;
+}
+
+.copyright li {
+  position: relative;
+  top: 19px;
+  left: 154px;
+  display: inline-block;
+  width: 100px;
 }
