@@ -1,0 +1,96 @@
+/* wrap */
+body {
+  color: #37383C;
+  font-size: 0.8em;
+  font-family: "맑은 고딕", "돋움", Dotum, AppleGothic, Sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+#wrap {
+  width: 100%;
+  background: #fff;
+  height: 80px;
+  background-color: #454e5d;
+}
+
+/* top */
+#logo_wrap {
+  width: 1139px;
+  border: 0px solid #eee;
+  height: 675px;
+  position: relative;
+  left: 50%;
+  margin-left: -569px;
+}
+
+.daelim_logo {
+  position: relative;
+  top: 19px;
+  left: 10px;
+  width: 790px;
+}
+
+a {
+  color: #3D3D3D;
+  text-decoration: none;
+}
+
+.link {
+  position: relative;
+  top: -50px;
+  width: 204px;
+  height: 41px;
+  left: 935px;
+}
+
+
+/* main area */
+ul, ol, li {
+  list-style: none;
+}
+
+.main_area {
+  width: 100%;
+  height: 707px;
+  background: #2e3440;
+  background-image: url(./images/login/login_bg.jpeg);
+  background-size: 1966px 707px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  border-bottom: 4px solid #2e3440;
+}
+
+.login_area {
+  width: 1139px;
+  height: 508px;
+  position: relative;
+  left: 50%;
+  margin-left: -570px;
+}
+
+.login {
+  width: 511px;
+  height: 706px;
+  float: right;
+  background: rgba(255,255,255, 0.8);
+}
+
+.browser_notice {
+  position: absolute;
+  width: 900px;
+  left: 64%;
+  margin-left: -95px;
+  top: 20px;
+}
+
+.browser_notice span {
+  color:red;
+  font-size:15px
+}
+
+.login_info {
+  position:relative;
+  top:20px;
+  left:317px;
+}
