@@ -4,10 +4,11 @@ body {
   padding: 0px;
 }
 
-#wrap {
+.wrap {
   min-width: 320px;
   position: relative;
 }
+
 
 /* header */
 header {
@@ -63,18 +64,18 @@ header .top .btn {
 
 
 /* contents */
-#contents {
+.contents {
   position: relative;
   overflow: hidden;
   height: 100vh;
 }
 
-#contents .cst {
+.contents .cst {
   position: relative;
-  background: #3eb5d7;
+  background: .3eb5d7;
 }
 
-#contents .cst .box {
+.contents .cst .box {
   height: 100%;
   width: 50%;
   position: relative;
@@ -83,7 +84,7 @@ header .top .btn {
 
 
 /* contents title */
-#contents .title {
+.contents .title {
   position: absolute;
   width: 340px;
   height: 160px;
@@ -93,9 +94,9 @@ header .top .btn {
   margin-left: -600px;
 }
 
-#contents .title .txt {
+.contents .title .txt {
   display: block;
-  color: #6effff;
+  color: .6effff;
   font-size: 28px;
   line-height: 40px;
   margin-top: 30px;
@@ -105,12 +106,12 @@ header .top .btn {
 
 
 /* left content */
-#contents .cst .left {
+.contents .cst .left {
   background: url(./images/PPS/leftbg.jpeg) no-repeat 0 0;
   background-size: cover;
 }
 
-#contents .cst .open_right {
+.contents .cst .open_right {
   position: absolute;
   right: 0;
   top: 50%;
@@ -119,7 +120,7 @@ header .top .btn {
 
 
 /* right content */
-#contents .cst .right {
+.contents .cst .right {
   position: absolute;
   right: 0;
   top: 0;
@@ -127,7 +128,7 @@ header .top .btn {
   background-size: cover;
 }
 
-#contents .cst .open_left {
+.contents .cst .open_left {
   position: absolute;
   left: 0;
   bottom: 50%;
@@ -136,57 +137,57 @@ header .top .btn {
 
 
 /* contents txt */
-#contents .cst .box .box_txt {
+.contents .cst .box .box_txt {
   position: absolute;
   top: 410px;
 }
 
-#contents .cst .left .box_txt {
+.contents .cst .left .box_txt {
   right: 100px;
   text-align: right;
   color: #fff;
 }
 
-#contents .cst .box .box_txt dl {
+.contents .cst .box .box_txt dl {
   padding-bottom: 40px;
   white-space: nowrap;
 }
 
-#contents .cst .box .box_txt dt {
+.contents .cst .box .box_txt dt {
   font-size: 50px;
   letter-spacing: -0.05em;
   font-weight: 500;
   display: inline-block;
   position: relative;
 }
-#contents .cst .right .box_txt dt {
+.contents .cst .right .box_txt dt {
   color: #fff;
 }
 
 
 /* media query */
 @media (max-width: 1440px) {
-  #header .top .inner {
+  .header .top .inner {
     height: 80px;
   }
 }
 
 @media (max-width: 1600px) {
-  #contents .cst {
+  .contents .cst {
     height: 100%;
   }
 }
 
 @media (max-width: 1920px) and (max-height: 1080px) {
-  #contents .cst {
+  .contents .cst {
     height: 1080px;
   }
 
-  #contents .cst .left .box_txt {
+  .contents .cst .left .box_txt {
     top: 470px;
   }
 
-  #contents .cst .right .box_txt {
+  .contents .cst .right .box_txt {
     top: 550px;
     left: 60px;
   }

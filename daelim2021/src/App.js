@@ -5,6 +5,7 @@ import Contents from './components/contents'
 import Footer from './components/footer'
 import {Switch, Route} from 'react-router-dom'
 import PPS from './PPS'
+import Login from './login'
 
 function App() {
   const content_data = [{
@@ -63,6 +64,9 @@ function App() {
       <Switch>
         <Route path="/PPS">
           <PPS />
+        </Route>
+        <Route path="/login">
+          <Login />
         </Route>
         <Route path="/">
           <Header></Header>
