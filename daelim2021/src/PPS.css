@@ -57,7 +57,7 @@ header .top .btn {
   border: none;
   cursor: pointer;
   position: absolute;
-  background: url(../images/PPS/nav.png) no-repeat;
+  background: url(./images/PPS/nav.png) no-repeat;
   text-indent: -9999px;
 }
 
@@ -106,7 +106,7 @@ header .top .btn {
 
 /* left content */
 #contents .cst .left {
-  background: url(../images/PPS/leftbg.jpeg) no-repeat 0 0;
+  background: url(./images/PPS/leftbg.jpeg) no-repeat 0 0;
   background-size: cover;
 }
 
@@ -123,7 +123,7 @@ header .top .btn {
   position: absolute;
   right: 0;
   top: 0;
-  background: url(../images/PPS/rightbg.jpeg) no-repeat 100% 0;
+  background: url(./images/PPS/rightbg.jpeg) no-repeat 100% 0;
   background-size: cover;
 }
 
@@ -191,4 +191,3 @@ header .top .btn {
     left: 60px;
   }
 }
-

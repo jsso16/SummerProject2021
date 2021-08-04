@@ -3,6 +3,8 @@ import './App.css'
 import Header from './components/header'
 import Contents from './components/contents'
 import Footer from './components/footer'
+import {Switch, Route} from 'react-router-dom'
+import PPS from './PPS'
 
 function App() {
   const content_data = [{
@@ -43,20 +45,31 @@ function App() {
   }]
 
   const menu_data = [{
-    menu: "입학 홈페이지"
+    menu: "입학 홈페이지",
+    path: "/PPS"
   },{
-    menu: "합격예측서비스"
+    menu: "합격예측서비스",
+    path: "/PPS"
   },{
-    menu: "대림대학교 홈페이지"
+    menu: "대림대학교 홈페이지",
+    path: "/login"
   },{
-    menu: "로그인"
+    menu: "로그인",
+    path: "/login"
   }]
 
   return (
     <div id="wrap">
-      <Header></Header>
-      <Contents content_data={content_data} menu_data={menu_data}></Contents>
-      <Footer></Footer>
+      <Switch>
+        <Route path="/PPS">
+          <PPS />
+        </Route>
+        <Route path="/">
+          <Header></Header>
+          <Contents content_data={content_data} menu_data={menu_data}></Contents>
+          <Footer></Footer>
+        </Route>
+      </Switch>
     </div>
   );
 }

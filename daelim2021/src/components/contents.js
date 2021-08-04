@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom'
+
 function Contents(props) {
   const content_data = props.content_data;
   const menu_data = props.menu_data;
@@ -35,9 +37,9 @@ function Contents(props) {
       </div>
       <div className="main_list">
         <div className="img_list">
-        {content_data.map(data => {
+        {content_data.map((data,idx) => {
           return (
-            <div className="slide">
+            <div className="slide" key={idx}>
               <img src={data.img} alt=""/>
               <a href="#">
                 <span className="cover">
@@ -57,12 +59,14 @@ function Contents(props) {
       </div>
       <div className="btn_menu">
         <ul>
-          {menu_data.map(md => {
+          {menu_data.map((md, idx) => {
             return (
-              <li>
-                <a href="#">
-                  <span>{md.menu}</span>
-                </a>
+              <li key={idx}>
+                <Link to={md.path}>
+                  {/* <a href="#"> */}
+                    <span>{md.menu}</span>
+                  {/* </a> */}
+                </Link>
               </li>
             )
           })}
