@@ -1,6 +1,6 @@
 # SummerProject2021
-#### HTML/CSS에서 React까지
-#### 대림대학교 홈페이지를 이용한 개인 프로젝트
+HTML/CSS에서 React까지<br>
+대림대학교 홈페이지를 이용한 개인 프로젝트
 
 > 작동 여부 O
 
