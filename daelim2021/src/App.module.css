@@ -123,8 +123,8 @@ header .list .list_btn {
 
 .btn_menu ul li {
   display: inline-table;
-  width: 25%;
-  max-width: 320px;
+  width: 50%;
+  max-width: 520px;
   height: 48px;
 }
 

@@ -4,8 +4,8 @@ import Header from './components/header'
 import Contents from './components/contents'
 import Footer from './components/footer'
 import {Switch, Route} from 'react-router-dom'
-import PPS from './PPS'
-import Login from './login'
+import PPS from './containers/PPS'
+import Login from './containers/login'
 
 function App() {
   const content_data = [{
@@ -46,14 +46,8 @@ function App() {
   }]
 
   const menu_data = [{
-    menu: "입학 홈페이지",
-    path: "/PPS"
-  },{
     menu: "합격예측서비스",
     path: "/PPS"
-  },{
-    menu: "대림대학교 홈페이지",
-    path: "/Login"
   },{
     menu: "로그인",
     path: "/Login"

@@ -7,7 +7,7 @@ body {
   padding: 0px;
 }
 
-#wrap {
+.wrap {
   width: 100%;
   background: #fff;
   height: 80px;
@@ -17,10 +17,10 @@ body {
 
 
 /* top */
-#logo_wrap {
+.logo_wrap {
   width: 1139px;
   border: 0px solid #eee;
-  height: 675px;
+  height: 80px;
   position: relative;
   left: 50%;
   margin-left: -569px;
@@ -56,7 +56,7 @@ ul, ol, li {
   width: 100%;
   height: 707px;
   background: #2e3440;
-  background-image: url(./images/login/login_bg.jpeg);
+  background-image: url(../images/login/login_bg.jpeg);
   background-size: 1966px 707px;
   background-position: top center;
   background-repeat: no-repeat;
@@ -73,7 +73,7 @@ ul, ol, li {
 
 .login {
   width: 511px;
-  height: 706px;
+  height: 686px;
   float: right;
   margin-top: 25px;
   background: rgba(255,255,255, 0.8);
@@ -102,8 +102,8 @@ ul, ol, li {
 /* login section */
 .login_box {
   position: relative;
-  top: 40px;
-  left: 20px;
+  top: 0px;
+  left: 0px;
 }
 
 .login_tabarea {
@@ -224,7 +224,7 @@ legend {
 
 /* forget area */
 .forget_area {
-  background: url(./images/login/forget_area.png) no-repeat 40px 13px;
+  background: url(../images/login/forget_area.png) no-repeat 40px 13px;
   width: 430px;
   height: 60px;
   clear: both;
