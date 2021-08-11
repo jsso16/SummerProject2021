@@ -9,7 +9,7 @@ body {
   margin: 0px;
 }
 
-#wrap {
+.wrap {
   position: relative;
   height: 100%;
   min-width: 1200px;
@@ -17,7 +17,7 @@ body {
 
 
 /* header */
-#wrap header {
+.wrap header {
   height: 100px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -275,19 +275,19 @@ footer p {
 
 /* media query */
 @media (max-width: 1299px){
-  #wrap header {
+  .wrap header {
     max-width: 970px;
   } 
 }
 
 @media (max-width: 1500px) {
-  #wrap header, #wrap .contents {
+  .wrap header, .wrap .contents {
     max-width: 1230px;
   }
 }
 
 @media (max-width: 1699px) {
-  #wrap header, #wrap .contents {
+  .wrap header, .wrap .contents {
     max-width: 1445px;
   }
 }

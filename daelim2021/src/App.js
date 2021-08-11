@@ -1,5 +1,5 @@
 // import logo from './logo.svg'
-import './App.css'
+import styles from './App.module.css'
 import Header from './components/header'
 import Contents from './components/contents'
 import Footer from './components/footer'
@@ -53,25 +53,25 @@ function App() {
     path: "/PPS"
   },{
     menu: "대림대학교 홈페이지",
-    path: "/login"
+    path: "/Login"
   },{
     menu: "로그인",
-    path: "/login"
+    path: "/Login"
   }]
 
   return (
-    <div id="wrap">
+    <div className={styles.wrap}>
       <Switch>
         <Route path="/PPS">
           <PPS />
         </Route>
-        <Route path="/login">
+        <Route path="/Login">
           <Login />
         </Route>
         <Route path="/">
-          <Header></Header>
-          <Contents content_data={content_data} menu_data={menu_data}></Contents>
-          <Footer></Footer>
+          <Header styles={styles}></Header>
+          <Contents content_data={content_data} menu_data={menu_data} styles={styles}></Contents>
+          <Footer styles={styles}></Footer>
         </Route>
       </Switch>
     </div>

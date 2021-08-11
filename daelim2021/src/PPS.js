@@ -3,7 +3,7 @@ import styles from './PPS.module.css'
 function PPS() {
   return (
     <div className={styles.wrap}>
-      <header>
+      <header className={styles.header}>
         <div className={styles.top}>
           <div className={styles.inner}>
             <h1 className={styles.logo}>
@@ -21,7 +21,7 @@ function PPS() {
           <span className={styles.txt}>최고수준의 대한민국 대표<br />고등직업교육기관으로 도약!</span>
         </h2>
         <div className={styles.cst}>
-          <div className={styles.box, styles.left}>
+          <div className={`${styles.box} ${styles.left}`}>
             <a href="#" className={styles.open_right}>
               <img src="../images/PPS/right_btn.png" alt="button" />
             </a>
@@ -31,7 +31,7 @@ function PPS() {
               </dl> 
             </div>
           </div>
-          <div className={styles.box, styles.right}>
+          <div className={`${styles.box} ${styles.right}`}>
             <a href="#" className={styles.open_left}>
               <img src="../images/PPS/left_btn.png" alt="button" />
             </a>

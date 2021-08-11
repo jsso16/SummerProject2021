@@ -1,4 +1,6 @@
-function Header() {
+function Header(props) {
+  const styles = props.styles;
+  
   return (
     <header>
       <h1>
@@ -6,8 +8,8 @@ function Header() {
           <img src="../images/logo.png" alt="대림대학교" />
         </a>
       </h1>
-      <span className="list">
-        <button className="list_btn">전체편성표</button>
+      <span className={styles.list}>
+        <button className={styles.list_btn}>전체편성표</button>
       </span>
     </header>
   )

@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 function Contents(props) {
   const content_data = props.content_data;
   const menu_data = props.menu_data;
+  const styles = props.styles;
 
   // const slide_content = (<div className="slide">
   //   <img src="../images/main02.jpeg" />
@@ -16,13 +17,13 @@ function Contents(props) {
   // </div>);
 
   return (
-    <article className="contents">
-      <div className="banner">
-        <div className="top">
+    <article className={styles.contents}>
+      <div className={styles.banner}>
+        <div className={styles.top}>
           <img src="../images/title.png" alt="배너 제목"/>
         </div>
-        <div className="bottom">
-          <div className="group">
+        <div className={styles.bottom}>
+          <div className={styles.group}>
             <a href="#">
               <img src="../images/banner01.jpeg" alt="마이스터대 선정 축하 배너"/>
             </a>
@@ -30,26 +31,26 @@ function Contents(props) {
           <img src="../images/banner02.jpeg" alt="연도별 학생 통계 배너"/>
         </div>
       </div>
-      <div className="main">
-        <div className="main_img">
+      <div className={styles.main}>
+        <div className={styles.main_img}>
           <img src="../images/main01.png" alt="메인 이미지"/>
         </div>
       </div>
-      <div className="main_list">
-        <div className="img_list">
+      <div className={styles.main_list}>
+        <div className={styles.img_list}>
         {content_data.map((data,idx) => {
           return (
-            <div className="slide" key={idx}>
+            <div className={styles.slide} key={idx}>
               <img src={data.img} alt=""/>
               <a href="#">
-                <span className="cover">
+                <span className={styles.cover}>
                   {data.isNow?
-                  <span className="mark">NOW</span> 
+                  <span className={styles.mark}>NOW</span> 
                   :
                   null
                   }
-                  <span className="title">{data.title}</span>
-                  <span className="title_on">{data.title_on}</span>
+                  <span className={styles.title}>{data.title}</span>
+                  <span className={styles.title_on}>{data.title_on}</span>
                 </span>
               </a>
             </div>
@@ -57,7 +58,7 @@ function Contents(props) {
         })} 
         </div>
       </div>
-      <div className="btn_menu">
+      <div className={styles.btn_menu}>
         <ul>
           {menu_data.map((md, idx) => {
             return (
